@@ -1,7 +1,7 @@
 {
-  "name": "brain-map-voc",
+  "name": "ai-dynamic-network",
   "version": "1.0.0",
-  "description": "动态词汇联想云应用，使用GPT-3.5进行词汇生成",
+  "description": "AI驱动的动态知识网络可视化，使用GPT-3.5进行知识联想",
   "main": "server.js",
   "engines": {
     "node": ">=14.0.0"
@@ -15,9 +15,9 @@
     "vocabulary",
     "mind-map",
     "gpt",
-    "language-learning",
-    "ielts",
-    "toefl"
+    "knowledge-graph",
+    "network-visualization",
+    "ai-powered"
   ],
   "author": "NextMindEdu",
   "license": "MIT",

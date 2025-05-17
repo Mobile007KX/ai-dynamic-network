@@ -1,14 +1,14 @@
-# brainMapVoc - 动态词汇联想云
+# AI Dynamic Network - 动态知识网络可视化
 
-一个使用GPT-3.5实时生成相关词汇的交互式词汇联想应用。特别适合用于语言学习、词汇拓展和教育场景。
+一个使用GPT-3.5实时生成知识联系的交互式网络可视化应用。适用于学习探索、概念关联、研究分析、教育等多种场景。
 
 ## 功能特点
 
-- **动态词汇生成**：使用GPT-3.5模型实时生成相关联词汇，无需维护静态词库
-- **交互式可视化**：以图形方式展示词汇之间的关联，支持拖拽和点击交互
-- **多主题支持**：支持环境、教育、科技等多个主题领域
-- **详细词汇信息**：提供发音、词性、例句等详细信息
-- **响应式设计**：适应不同屏幕尺寸
+- **智能知识关联**：使用GPT-3.5模型实时生成概念之间的关联，无需预设固定关系
+- **网络可视化交互**：以动态网络图形展示知识点之间的连接，支持拖拽、缩放和点击交互
+- **多领域探索**：支持科学、教育、商业、技术等多个知识领域
+- **深度关联分析**：提供概念之间的关联类型和强度分析
+- **响应式设计**：适应不同设备和屏幕尺寸
 
 ## 安装与使用
 
@@ -21,8 +21,8 @@
 
 1. 克隆仓库
 ```bash
-git clone https://github.com/yourusername/brainMapVoc.git
-cd brainMapVoc
+git clone https://github.com/Mobile007KX/ai-dynamic-network-new.git
+cd ai-dynamic-network-new
 ```
 
 2. 安装依赖
@@ -47,7 +47,7 @@ npm start
 ## 项目结构
 
 ```
-brainMapVoc/
+ai-dynamic-network/
 ├── api/                 # API端点
 │   ├── get-related-words.js
 │   ├── get-topic-words.js
@@ -58,28 +58,28 @@ brainMapVoc/
 │   ├── config.js        # 配置文件
 │   ├── graph-utils.js   # 图形工具函数
 │   └── main.js          # 主应用逻辑
-├── public/              # 静态资源
-├── .env.example         # 环境变量示例
 ├── index.html           # 主页
+├── index.js             # Vercel入口
 ├── package.json         # 项目配置
 ├── README.md            # 项目说明
-└── server.js            # 服务器入口
+├── server.js            # 服务器入口
+└── vercel.json          # Vercel配置
 ```
 
-## 自定义配置
+## 应用场景
 
-项目配置位于 `js/config.js` 文件中，可以根据需要调整：
-
-- **图形参数**：节点数量、连接数、间距等
-- **API设置**：端点、超时、重试次数
-- **缓存策略**：是否启用缓存、有效期
-- **主题列表**：可自定义添加新主题
+- **学术研究**：探索学术概念之间的关联和交叉领域
+- **课程规划**：规划课程内容和知识点的逻辑关系
+- **创意发想**：进行创意头脑风暴和概念扩展
+- **知识管理**：构建个人或组织的知识地图
+- **企业决策**：分析业务概念和市场因素的关联
 
 ## 技术栈
 
-- **前端**：原生JavaScript、Canvas API
+- **前端**：原生JavaScript、D3.js可视化
 - **后端**：Node.js、Express
 - **AI**：OpenAI GPT-3.5 API
+- **部署**：Vercel
 
 ## 贡献
 

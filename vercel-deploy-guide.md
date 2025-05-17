@@ -1,4 +1,4 @@
-# BrainMapVoc Vercel 部署指南
+# AI Dynamic Network Vercel 部署指南
 
 ## 部署步骤
 

@@ -1,29 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BrainMapVoc - 动态词汇联想图</title>
+  <meta name="description" content="AI动态知识网络 - 探索知识点之间的智能关联">
+  <title>AI Dynamic Network - 动态知识可视化</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <div id="controls">
     <select id="topic-select">
-      <option value="环境与自然">环境与自然</option>
+      <option value="科学研究">科学研究</option>
       <option value="教育与学习">教育与学习</option>
       <option value="科技与创新">科技与创新</option>
-      <option value="社会与文化">社会与文化</option>
+      <option value="商业与管理">商业与管理</option>
       <option value="健康与医疗">健康与医疗</option>
-      <option value="城市与建筑">城市与建筑</option>
+      <option value="环境与可持续发展">环境与可持续发展</option>
+      <option value="人工智能">人工智能</option>
+      <option value="数据科学">数据科学</option>
     </select>
-    <button id="new-topic-btn">切换主题</button>
+    <button id="new-topic-btn">探索领域</button>
   </div>
   
   <canvas id="cloud"></canvas>
   
   <div id="loading-overlay" class="hidden">
     <div class="spinner"></div>
-    <div class="loading-text">生成词汇中...</div>
+    <div class="loading-text">AI正在分析知识关联...</div>
   </div>
   
   <script src="js/config.js"></script>
