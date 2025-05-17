@@ -1,0 +1,163 @@
+html, body { 
+  margin: 0; 
+  padding: 0; 
+  overflow: hidden; 
+  background: #fff; 
+  font-family: 'Arial', sans-serif; 
+}
+
+canvas { 
+  display: block; 
+}
+
+#controls {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 100;
+  font-family: Arial, sans-serif;
+}
+
+#topic-select {
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+#new-topic-btn {
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: 1px solid #0078d7;
+  background: #0078d7;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#new-topic-btn:hover {
+  background: #0066b8;
+}
+
+#new-topic-btn:disabled {
+  background: #ccc;
+  border-color: #aaa;
+  cursor: not-allowed;
+}
+
+.word-tooltip {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+  max-width: 300px;
+  font-family: Arial, sans-serif;
+  transition: opacity 0.2s ease;
+}
+
+.tooltip-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.tooltip-phonetic {
+  font-weight: normal;
+  color: #888;
+  font-size: 14px;
+}
+
+.tooltip-meaning {
+  margin-bottom: 8px;
+}
+
+.tooltip-pos {
+  color: #555;
+}
+
+.tooltip-example {
+  margin-bottom: 8px;
+  font-style: italic;
+  color: #555;
+}
+
+.tooltip-translation {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.tooltip-difficulty {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #777;
+}
+
+.tooltip-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #999;
+}
+
+/* 加载动画样式 */
+#loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.85);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+#loading-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(0, 120, 215, 0.1);
+  border-radius: 50%;
+  border-top-color: #0078d7;
+  animation: spin 1s ease-in-out infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loading-text {
+  font-size: 16px;
+  color: #333;
+}
+
+/* 节点加载动画 */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.node-loading {
+  animation: pulse 0.8s infinite;
+}
